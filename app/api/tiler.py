@@ -367,7 +367,10 @@ class Tiles(TaskNestedView):
             except FileNotFoundError:
                 raise exceptions.ValidationError("Not a valid color_map value")
         intensity = None
-        rescale_arr = tuple(map(float, rescale.split(",")))
+        try:
+            rescale_arr = tuple(map(float, rescale.split(",")))
+        except Exception:
+            rescale_arr = (0,255)
         options = img_profiles.get(driver, {})
         if hillshade is not None:
             try:
