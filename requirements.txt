@@ -62,4 +62,4 @@ https://download.lfd.uci.edu/pythonlibs/y2rycu7g/GDAL-3.2.3-cp37-cp37m-win_amd64
 Shapely==1.7.0 ; sys_platform == "win32"
 eventlet==0.25.1 ; sys_platform == "win32"
 pyopenssl==19.1.0 ; sys_platform == "win32"
-numpy==1.21.1
+numpy==1.22.0
